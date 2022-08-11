@@ -1,21 +1,41 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NavbarItems from '../data';
+import logo from '../img/logo.PNG';
+import AiOutlineMenu from 'react-icons/ai';
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[90px] bg-gray-400   ">
-      <div className="max-w-[1240px] mx-auto px-4 flex justify-between text-white ">
-        <div>
-          <h1>logo</h1>
+    <nav className=" w-full h-[80px] text-white bg-primary  ">
+      <div className="  flex items-center  justify-between h-full">
+        <div className=" p-2 ">
+          <Link to="Accueil ">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[80px] h-15  rounded-full"
+            />
+          </Link>
         </div>
-        <div className="hidden md:flex space-x-12  ">
-          <li>Accueil</li>
-          <li>Accessoires et piéces</li>
-          <li>Atelier</li>
-          <li>Nous contacter</li>
-          <li>Qui sommes-nous</li>
+
+        <div className="mr-4  hidden md:flex space-x-20 items-center">
+          {NavbarItems.map((link, index) => (
+            <Link
+              to={link.to}
+              key={index}
+              className=" hover:text-secondary duration-200 ease-in-out"
+            >
+              {link.name}
+            </Link>
+          ))}
+
+          <button className="p-2 hidden md:block text-primary bg-secondary rounded-full">
+            Se connecter
+          </button>
+          <div>{/* <AiOutlineMenu /> */}</div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

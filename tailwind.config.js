@@ -11,9 +11,10 @@ module.exports = {
 
     extend: {
       colors: {
-        promary: 'rgb(233 213 255)',
-        secondary: 'rgb(192 132 252)',
-        button: 'rgb(156 163 175)'
+        secondary: '	rgb(255,215,120)',
+        primary: 'rgb(45,45,45)',
+        button: 'rgb(156 163 175)',
+        hoover: 'gray'
       }
     }
   },
