@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavbarItems from '../data';
+import NavbarItems from '../data/navBarData';
 import logo from '../img/logo.PNG';
-import AiOutlineMenu from 'react-icons/ai';
+// import AiOutlineMenu from 'react-icons/ai';
 
 const Navbar = () => {
   return (
     <nav className=" w-full h-[80px] text-white bg-primary  ">
       <div className="  flex items-center  justify-between h-full">
-        <div className=" p-2 ">
-          <Link to="Accueil ">
+        <div className=" p-4 ml-4 ">
+          <Link to="/">
             <img
               src={logo}
               alt="logo"
-              className="w-[80px] h-15  rounded-full"
+              className="w-[100px] h-15  rounded-full"
             />
           </Link>
         </div>
@@ -32,7 +32,6 @@ const Navbar = () => {
           <button className="p-2 hidden md:block text-primary bg-secondary rounded-full">
             Se connecter
           </button>
-          <div>{/* <AiOutlineMenu /> */}</div>
         </div>
       </div>
     </nav>

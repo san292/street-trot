@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Accueil from './pages/Accueil';
 import Atelier from './pages/Atelier';
-import AccessoiresEtPieces from './pages/AccessoiresEtPieces';
+import PiecesDetachees from './pages/PiecesDetachees';
 import CreerUnCompte from './pages/CreerUnCompte';
 import NousContacter from './pages/NousContacter';
 import QuiSommesNous from './pages/QuiSommesNous';
@@ -15,8 +15,8 @@ function App() {
       <Announecement />
       <Navbar />
       <Routes>
-        <Route path="Accueil" element={<Accueil />} />
-        <Route path="piecesdetachees" element={<AccessoiresEtPieces />} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="piecesdetachees" element={<PiecesDetachees />} />
         <Route path="Atelier" element={<Atelier />} />
         <Route path="NousContacter" element={<NousContacter />} />
         <Route path="QuiSommesNous" element={<QuiSommesNous />} />

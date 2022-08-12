@@ -2,7 +2,7 @@ const NavbarData = [
   {
     // className: styles.className,
     // activeClassName: styles.activeClassName,
-    to: 'Accueil',
+    to: '/',
     name: 'Accueil'
   },
   {
