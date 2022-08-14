@@ -3,8 +3,8 @@ import Articles from '../components/Articles';
 
 const PiecesDetachees = () => {
   return (
-    <div className="mx-40 ">
-      <div className="flex-column justify-items-center">
+    <div className="mx-20 ">
+      <div className="flex-column justify-items-center py-4">
         <h1>Accessoires et piéces Pieces détachées</h1>
         <h3>
           Retrouvez tous nos accessoires pour vos déplacements urbains en
@@ -15,7 +15,7 @@ const PiecesDetachees = () => {
           mieux vous servir certains de nos articles peuvent être neuves
         </h5>
       </div>
-      <div className="w-[800px]">
+      <div className="">
         <Articles />
       </div>
     </div>

@@ -16,7 +16,7 @@ const piecesdetacheesData = [
     src: photo1,
     marque: 'xiaomi',
     title: 'carte mere',
-    description: 'controleur ou carte mere pour ninebot es2',
+    description: ' carte mere pour ninebot es2',
     price: 25
   },
   {
@@ -74,6 +74,54 @@ const piecesdetacheesData = [
     title: 'moteur ',
     description: 'moteur pour dualtron spider',
     price: 100
+  },
+  {
+    id: 10,
+    src: photo1,
+    marque: 'dualtron',
+    title: 'pneu ',
+    description: 'moteur pour dualtron mini ',
+    price: 58
+  },
+  {
+    id: 11,
+    src: photo1,
+    marque: 'dualtron',
+    title: 'pneu ',
+    description: 'moteur pour dualtron mini ',
+    price: 58
+  },
+  {
+    id: 12,
+    src: photo1,
+    marque: 'dualtron',
+    title: 'pneu ',
+    description: 'moteur pour dualtron mini ',
+    price: 58
+  },
+  {
+    id: 13,
+    src: photo1,
+    marque: 'dualtron',
+    title: 'pneu ',
+    description: 'moteur pour dualtron mini ',
+    price: 58
+  },
+  {
+    id: 14,
+    src: photo1,
+    marque: 'dualtron',
+    title: 'pneu ',
+    description: 'moteur pour dualtron mini ',
+    price: 58
+  },
+  {
+    id: 15,
+    src: photo1,
+    marque: 'dualtron',
+    title: 'pneu ',
+    description: 'moteur pour dualtron mini ',
+    price: 58
   }
 ];
 

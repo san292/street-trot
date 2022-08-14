@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-primary text-white h-[60px] flex justify-center  items-center  ">
-      <div className="flex justify-around  ml-6">
+    <div className="bg-primary text-white h-[150px] w-full flex-col justify-center  items-center  ">
+      <div className="flex justify-around  ml-6 p-2">
         <h3>
           Abonnez-vous à notre newsletter et recevez 5% de remise sur votre
           première commande ! (Pensez à vérifier vos spams !)
@@ -16,8 +16,10 @@ const Footer = () => {
           <input className=" ml-3" type="submit" value="Envoyer" />
         </form>
       </div>
-      <span className="mx-4">©2022 </span>
-      <span className="">Street trot </span>
+      <div className="flex justify-center items-center">
+        <h6 className="mx-4">©2022 </h6>
+        <span className="">Street trot </span>
+      </div>
     </div>
   );
 };
