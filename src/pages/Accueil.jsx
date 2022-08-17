@@ -3,7 +3,7 @@ import Main from '../components/Main';
 
 const Accueil = () => {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen ">
       <Main />
     </div>
   );

@@ -4,7 +4,8 @@ import Article from '../components/Article';
 
 const Articles = () => {
   return (
-    <div className="grid grid-rows-3 grid-flow-row gap-4 md:grid-flow-col lg:grid-flow-col justify-items-center">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 justify-items-center">
+      {/* <div className="flex-wrap  justify-items-center"> */}
       {articles.map((article) => (
         <Article key={article.id} {...article} />
       ))}

@@ -4,7 +4,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 const Announecement = () => {
   return (
     <div className=" flex h-[40px] justify-center items-center  font-light  bg-primary text-white border-b-[0.1px]">
-      <h3 className="shrink-0">Expert de la mobilité depuis 2018</h3>
+      <h3 className="hidden md:block ">Expert de la mobilité depuis 2018</h3>
 
       <span className="ml-10">
         <BsFillTelephoneFill />

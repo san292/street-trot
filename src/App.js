@@ -11,7 +11,7 @@ import Announecement from './components/Announecement';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Announecement />
       <Navbar />
       <Routes>
