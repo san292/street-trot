@@ -3,7 +3,7 @@ import Articles from '../components/Articles';
 
 const PiecesDetachees = () => {
   return (
-    <div className="mx-20 relative justify-center">
+    <div className="mx-20 mt-[90px]  relative justify-center">
       <div className="flex-column justify-items-center py-4">
         <h1>Accessoires et piéces détachées</h1>
         <h3 className="hidden md:">

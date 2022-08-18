@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavbarItems from '../data/navBarData';
 import logo from '../img/main3.PNG';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoMdClose } from 'react-icons/io';
 
 const Navbar = () => {
-  console.log('items', NavbarItems);
+  const [nav, setNav] = useState(false);
+  const handelNave = () => {
+    setNav(!nav);
+  };
+  const handelMenu = () => {
+    setNav(false);
+  };
+  useEffect(() => {
+    const changeWidth = () => {
+      if (window.innerWidth > 768) {
+        console.log('ferme menu apres 768');
+        handelMenu(false);
+      }
+    };
+    window.addEventListener('resize', changeWidth);
+
+    return () => {
+      window.removeEventListener('resize', changeWidth);
+    };
+  }, []);
   return (
-    <nav className=" relative w-full h-auto md:h-[90px]  text-white bg-primary ">
+    <nav className=" relative w-full h-auto md:h-[90px] text-white bg-primary ">
       <div className="  w-full px-2 h-full mx-auto   flex items-center  justify-between ">
         <div className="p-4 ml-4">
           <Link to="/">
@@ -37,27 +57,39 @@ const Navbar = () => {
 
         {/* Hamburger Menu  */}
 
-        <div className=" block md:hidden ">
-          <GiHamburgerMenu className="text-white" />
+        <div className=" block mr-4 md:hidden ">
+          {nav ? (
+            <IoMdClose className="text-white " onClick={handelNave} />
+          ) : (
+            <GiHamburgerMenu className="text-white" onClick={handelNave} />
+          )}
         </div>
-        {/* <div class="md:hidden flex-col"> */}
+
+        {/* Mobile Menu */}
         <div
           id="menu"
           // class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 drop-shadow-md"
-          className="w-full flex-col justify-center mt-4 text-center absolute top-24 left-0 ml-4 md:hidden"
+          className={
+            nav
+              ? 'w-full flex-col justify-center mt-4 text-center absolute top-24 md:hidden'
+              : 'hidden'
+          }
         >
           {NavbarItems.map((link, index) => (
             <Link
               to={link.to}
               key={index}
-              className=" hover:text-red-600 text-sm hover:text-base text-primary block duration-200 ease-in-out "
+              className=" hover:text-pink-400 font-medium text-md hover:text-base text-primary block duration-200 ease-in-out "
+              onClick={handelMenu}
             >
               {link.name}
             </Link>
           ))}
+          <button className=" p-1.5 mt-4 font-semibold text-primary bg-button hover:bg-white  rounded-full">
+            Se connecter
+          </button>
         </div>
       </div>
-      {/* </div> */}
     </nav>
   );
 };
