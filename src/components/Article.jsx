@@ -5,7 +5,7 @@ const Article = ({ description, marque, src, title, price }) => {
   return (
     <div className=" w-[200px] h-[200px] ">
       <img
-        className="w-[200px] h-[150px] object-cover"
+        className="w-[200px] h-[150px] object-cover drop-shadow-lg "
         src={src}
         alt="article"
       />
