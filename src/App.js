@@ -11,7 +11,7 @@ import Announecement from './components/Announecement';
 
 function App() {
   return (
-    <div className="absolute w-full h-full">
+    <div className="absolute w-full h-full ">
       <Announecement />
       <Navbar />
       <Routes>

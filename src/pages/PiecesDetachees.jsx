@@ -3,19 +3,15 @@ import Articles from '../components/Articles';
 
 const PiecesDetachees = () => {
   return (
-    <div className="mx-20 mt-[90px]  relative justify-center">
-      <div className="flex-column justify-items-center py-4">
+    <div className=" md:mx-20 mt-4 relative top-20 md:top-10  z-0">
+      <div className="flex-column justify-items-center pl-5 py-4">
         <h1>Accessoires et piéces détachées</h1>
-        <h3 className="hidden md:">
-          Retrouvez tous nos accessoires pour vos déplacements urbains en
-          trottinette électrique
-        </h3>
-        <h5 className="hidden md:block">
+        <h5 className="hidden md:block pt-2">
           Tous nos accesoires et piéces sont en pricipes d'occasions, mais pour
           mieux vous servir certains de nos articles peuvent être neuves
         </h5>
       </div>
-      <div className="">
+      <div className="text-center">
         <Articles />
       </div>
     </div>
